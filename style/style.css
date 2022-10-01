@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+.calculator-content-body_inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+.calculator_content-title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 160%;
+    margin-top: 200px;
+    color: #111111;
+}
+.input{
+    position: relative;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+.title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 44px;
+    margin-bottom: 24px;
+    color: #575757;
+}
+.input_number{
+position: relative;
+width: 100%;
+padding: 16px 0 0px 24px;
+background: #F3F3F4;
+border-radius: 16px;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+line-height: 36px;
+color: #575757;
+border: none;
+outline: none;
+}
+.input-range{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 90%;
+    height: 2px;
+    background: #FF9514;
+    margin-left: 24px;
+    margin-right: 10px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.input-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FF9514;
+}
+.title_1{
+display: inline-block;
+margin-top: 37px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #333333;
+
+}
+.title_1:nth-child(1){
+    margin-right: 201px;
+}
+.value{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 90%;
+    color: #575757;
+    margin-top: 8px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+.d-flex{
+    display: flex;
+}
+.button{
+width: 426px;
+}
+.btn{
+width: 100%;
+padding: 14px 52px 18px;
+background: #FF9514;
+border-radius: 40px;
+border: none;
+margin-top: 44px;
+margin-bottom: 30px;
+cursor: pointer;
+transition: .4s;
+}
+.btn:hover{
+    opacity: .9;
+}
+.btn:active{
+    position: relative;
+    top: -1px;
+}
+.btn a{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:1369px) {
+    .calculator-content-body_inputs{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .calculator_content-title{
+        margin-top: 100px;
+    }
+   .button{
+    width: 100%;
+   }
+   .d-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+   nav{
+    margin: 0;
+   }
+}
+@media only screen and (max-width:1024px) {
+    .container{
+        padding: 0 48px;
+    }
+}
+@media only screen and (max-width:888px) {
+    .title_1:nth-child(1) {
+        margin-right: 0px;
+    }
+    .calculator_content-title{
+        font-size: 32px;
+        line-height: 200%;
+    }
+    .btn{
+        padding: 14px 32px;
+    }
+}
+@media only screen and (max-width:817px) {
+    .calculator_content-title{
+        font-size: 25px;
+        line-height: 200%;
+    }
+    .btn a{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .container{
+        padding: 0 36px;
+    }
+    .calculator_content-title{
+        margin-top: 64px;
+    }
+    .btn {
+        width: 200%;
+    }
+}
+@media only screen and (max-width:659px) {
+    .container{
+        padding: 0 20px;
+    }
+    .d-flex{
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        width: 100%;
+    }
+    .calculator_content-title{
+        margin-top: 44px;
+    }
+    h1{
+        font-size: 34px;
+        line-height: 100%;
+    }
+    .title_1{
+        font-size: 22px;
+    }
+    .btn a {
+        font-size: 22px;
+    }
+    .value{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:365px) {
+    .btn a{
+        font-size: 16px;
+    }
+}
